@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* Quiz Container */
+#quiz-container {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(255, 255, 255, 0.2);
+  width: 350px;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+/* Timer */
+#timer-container {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* Question Text */
+#question-text {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Answer Buttons */
+#answer-buttons button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#answer-buttons button:hover {
+  background-color: #45a049;
+  transform: translateY(-5px);
+}
+
+#answer-buttons button:active {
+  transform: translateY(2px);
+  background-color: #397d3d;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Score Container */
+#score-container {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #3f51b5;
+}
+
+/* Exit Button */
+.button.exit {
+  background-color: #ff4444;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button.exit:hover {
+  background-color: #ff0000;
+  transform: translateY(-5px);
+}
+
+.button.exit:active {
+  transform: translateY(2px);
+  background-color: orange;
+}
+
+/* Restart Button */
+#restart-button {
+  background-color: #009688;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#restart-button:hover {
+  background-color: #00796b;
+  transform: translateY(-5px);
+}
+
+#restart-button:active {
+  transform: translateY(2px);
+  background-color: #004d40;
+}
